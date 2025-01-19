@@ -1,0 +1,2 @@
+# cd-ripper
+Rip CDs
