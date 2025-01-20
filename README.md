@@ -9,7 +9,8 @@ https://github.com/jborean93/smbprotocol
 ## Docs
 https://kkroening.github.io/ffmpeg-python/
 
-# environment setup
+## Environment setup
+Setup the python virtual environment and install dependencies with pip:
 ```
 cd ~/project/directory 
 python -m venv ./env
@@ -17,7 +18,10 @@ source ./env/bin/activate
 pip install -r ./requirements.txt
 ```
 
-# ini file
+You'll need to install `ffmpeg` with a package manager like homebrew:
+`brew install ffmpeg`
+
+## ini file
 Create a file called `.ripItGood.ini` and give it the following contents: 
 ```
 [credentials]
@@ -29,7 +33,8 @@ NAS_IP = "192.168.0.100"
 NAS_SHARE = "Media"
 NAS_DESTINATION_DIR = "/Music/"
 RIP_OUTPUT_DIR = "/tmp/cd_rip"
+SKIP_VOLUMES = [ "volumes", "to", "not", "scan" ]
 ```
 
-# Extras
+## Extras
 I like to run this automatically when I insert a CD.  In macOS, you can open System Preferences and find `Handle CDs and DVDs`.  Then choose `When you insert a music CD` > `Run Script...`
