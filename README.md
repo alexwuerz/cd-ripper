@@ -1,5 +1,13 @@
 # cd-ripper
 Rip CDs
+This was written and tested on macOS Sonoma using Python3.
+
+## Sources
+https://github.com/kkroening/ffmpeg-python
+https://github.com/jborean93/smbprotocol
+
+## Docs
+https://kkroening.github.io/ffmpeg-python/
 
 # environment setup
 ```
@@ -19,7 +27,7 @@ NAS_PASSWORD = "password"
 [config]
 NAS_IP = "192.168.0.100"
 NAS_SHARE = "Media"
-NAS_DESTINATION_DIR = "/Media/Music/"
+NAS_DESTINATION_DIR = "/Music/"
 RIP_OUTPUT_DIR = "/tmp/cd_rip"
 ```
 
